@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Encriptador y Desencriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">  
+        <link rel="shortcut icon" href="Logos/minilogo.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    </head>
+    <img src="Logos/Logo.png" alt="logo alura">
+    <h1>Encriptador y desencriptador de texto</h1>
+    <body class="body">
+        <img src="Logos/Muñeco.png" alt="Persona buscando" id="mono">
+        <p id="Importante">Importante: ingresar solo letras minusculas, sin tildes ni caracteres especiales</p>
+        <header>
+            <div>
+                
+                <textarea name="encriptador" id="ingresetexto" cols="30" rows="10" placeholder="Ingrese Texto a Encriptar" autofocus></textarea>   
+                <textarea name="textoencriptado" id="yaencriptado" cols="30" rows="10" readonly></textarea>
+            </div>
+            <div>
+                <button onclick="cambiodeletras()" id="encriptar">Encriptar Texto</button>
+            </div>
+            <div>
+                <button onclick="copiardes()" id="copy">Copiar</button>
+            </div>
+            <div>
+                <textarea name="desencriptado" id="ingresetextoen" cols="30" rows="10" placeholder="Ingrese Texto a Desencriptar" autofocus></textarea>
+                <textarea name="textodesencriptado" id="desencriptado" cols="30" rows="10" readonly></textarea>    
+            </div>
+            <div>
+                <button onclick="cambioscript()" id="encriptar">Desencriptar Texto</button>
+            </div>
+            <div>
+                <button onclick="copiaren()" id="copy">Copiar</button>
+            </div>
+            
+        </header>
+       
+        <script src="encriptador.js"></script>
+    </body>
